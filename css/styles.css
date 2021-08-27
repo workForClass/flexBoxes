@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(255, 232, 235);
 }
@@ -9,4 +13,30 @@ body {
   margin: 0 auto;
   text-align: center;
   width: 25%;
+}
+
+.row {
+  display: flex;
+  padding: 0px 4px;
+  flex-wrap: wrap;
+}
+
+.row img {
+  flex: 0 1 25%;
+  max-width: 25%;
+  padding: 0px 4px;
+  margin-top: 8px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .row img {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .row img {
+    max-width: 100%;
+  }
 }
