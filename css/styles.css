@@ -10,3 +10,25 @@ body {
   text-align: center;
   width: 25%;
 }
+.row {
+  display: flex;
+  padding-top:  0px;
+  padding-bottom: 0px ;
+  padding-left: 4px;
+  padding-right: 4px;
+  flex-wrap: wrap;
+  
+}
+img {
+max-width: 25%;
+flex-basis: 25% ;
+padding: 0px 4px;
+margin-top: 8px;
+}
+
+*{box-sizing: border-box;}
+
+@media only screen and (max-width: 800px) {
+  img {flex-basis: 50% ;}
+
+@media only screen and (max-width: 600px) 
