@@ -1,3 +1,7 @@
+*{ box-sizing: border-box; 
+
+}
+
 body {
   background-color: rgb(255, 232, 235);
 }
@@ -10,3 +14,35 @@ body {
   text-align: center;
   width: 25%;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  flex-basis: 25%; 
+  max-width: 25%;
+  padding: 0px 4px;
+  margin-top: 8px;
+}
+
+/* On screens, If the screen is smaller than 800px, instead of four images per row there should be two*/
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+  img {
+    min-width: fit-content;
+  }
+}
+
+/* On screens, if the screen is smaller than 600px, the two images per row should become one image per row. */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  img {
+    max-width: min-content;
+  }
+  }
